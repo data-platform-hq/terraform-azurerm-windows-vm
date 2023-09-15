@@ -1,6 +1,6 @@
 locals {
   suffix                 = length(var.suffix) == 0 ? "" : "-${var.suffix}"
-  virtual_machine_name   = var.custom_virtual_machine_name == null ? "vm-${var.env}${local.suffix}" : "${var.custom_virtual_machine_name}${local.suffix}"
+  virtual_machine_name   = var.custom_virtual_machine_name == "" ? "vm-${var.env}${local.suffix}" : "${var.custom_virtual_machine_name}${local.suffix}"
   network_interface_name = var.custom_network_interface_name == null ? "nic-${var.project}-${var.env}-${var.location}${local.suffix}" : "${var.custom_network_interface_name}${local.suffix}"
   public_ip              = var.custom_public_ip_name == null ? "ip-${var.project}-${var.env}-${var.location}${local.suffix}" : "${var.custom_public_ip_name}${local.suffix}"
 }

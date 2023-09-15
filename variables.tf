@@ -27,7 +27,7 @@ variable "suffix" {
 variable "custom_virtual_machine_name" {
   type        = string
   description = "Specifies the name of the virtual machine name resource"
-  default     = null
+  default     = ""
 
   validation {
     condition     = (length(var.custom_virtual_machine_name) < 16)
