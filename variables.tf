@@ -30,7 +30,7 @@ variable "custom_virtual_machine_name" {
   default     = null
 
   validation {
-    condition = (length(var.custom_virtual_machine_name) < 16)
+    condition     = (length(var.custom_virtual_machine_name) < 16)
     error_message = "Name should be 15 characters or less"
   }
 }
