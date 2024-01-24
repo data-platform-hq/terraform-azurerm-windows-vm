@@ -11,6 +11,7 @@ resource "azurerm_public_ip" "this" {
   name                = local.public_ip
   resource_group_name = var.resource_group
   location            = var.location
+  tags                = var.tags
   allocation_method   = var.public_ip_allocation_method
 }
 
@@ -31,6 +32,7 @@ resource "azurerm_network_interface" "this" {
 resource "azurerm_windows_virtual_machine" "this" {
   name                  = local.virtual_machine_name
   location              = var.location
+  tags                  = var.tags
   resource_group_name   = var.resource_group
   network_interface_ids = [azurerm_network_interface.this.id]
   size                  = var.vm_size
