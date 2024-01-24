@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/compare/v1.0.1...v1.0.2) (2024-01-24)
+
+
+### Bug Fixes
+
+* added tags for public ip and windows VM ([fdb91c7](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/commit/fdb91c72c95b10f13a94e8d8806303cbb47b4ee1))
+
 ## [1.0.1](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/compare/v1.0.0...v1.0.1) (2023-09-15)
 
 
