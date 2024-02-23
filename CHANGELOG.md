@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/compare/v1.0.2...v1.0.3) (2024-02-23)
+
+
+### Bug Fixes
+
+* replaced pre-commit repo docs creation/update by GH Actions ([e66403d](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/commit/e66403d17d60e9698321124cf28c99a9bac86778))
+
 ## [1.0.2](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/compare/v1.0.1...v1.0.2) (2024-01-24)
 
 
