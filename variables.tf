@@ -79,7 +79,7 @@ variable "network_interface_private_ip_address_allocation" {
 variable "vm_size" {
   type        = string
   description = "The SKU which should be used for this Virtual Machine."
-  default     = "Standard_B1s"
+  default     = "Standard_D2s_v5"
 }
 
 variable "vm_admin_username" {
@@ -116,7 +116,7 @@ variable "source_image_reference" {
   default = {
     publisher = "MicrosoftWindowsServer"
     offer     = "WindowsServer"
-    sku       = "2019-Datacenter-Core"
+    sku       = "2022-datacenter-azure-edition"
     version   = "latest"
   }
 }
