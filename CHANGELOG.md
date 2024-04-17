@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/compare/v1.0.3...v1.0.4) (2024-04-17)
+
+
+### Bug Fixes
+
+* updated iamge sku and default shape ([1c68611](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/commit/1c686112c40de35e358dc4b4760db400ee3cedb1))
+
 ## [1.0.3](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/compare/v1.0.2...v1.0.3) (2024-02-23)
 
 
