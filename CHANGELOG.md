@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/compare/v1.0.4...v1.1.0) (2024-09-10)
+
+
+### Bug Fixes
+
+* added security KICS scan action ([8540860](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/commit/8540860a5a5cbd565b34f38c79beb8859daf74d5))
+
+
+### Features
+
+* upgrade to AzureRM v4 ([7857702](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/commit/78577027b2eaa50aeb91d9b58f8be96d03a390d2))
+
 ## [1.0.4](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/compare/v1.0.3...v1.0.4) (2024-04-17)
 
 
