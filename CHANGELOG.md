@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/compare/v1.1.0...v1.2.0) (2026-02-04)
+
+
+### Features
+
+* upgrade provider to AzureRM v4.0 ([f18b9fa](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/commit/f18b9fa23429ba3fb7e312c3b3920e60e4a0bd64))
+
 # [1.1.0](https://github.com/data-platform-hq/terraform-azurerm-windows-vm/compare/v1.0.4...v1.1.0) (2024-09-10)
 
 
