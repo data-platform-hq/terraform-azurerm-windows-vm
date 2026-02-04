@@ -41,14 +41,14 @@ module "windows_virtual_machine" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=1.0.0 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 4.0.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | >= 4.0.1 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~> 4.0 |
 
 ## Modules
 
@@ -73,12 +73,12 @@ No modules.
 | <a name="input_identity_enabled"></a> [identity\_enabled](#input\_identity\_enabled) | Boolean flag than enables creation of System Assigned identity to VM | `bool` | `false` | no |
 | <a name="input_location"></a> [location](#input\_location) | Azure location | `string` | n/a | yes |
 | <a name="input_network_interface_private_ip_address_allocation"></a> [network\_interface\_private\_ip\_address\_allocation](#input\_network\_interface\_private\_ip\_address\_allocation) | The allocation method used for the Private IP Address. | `string` | `"Dynamic"` | no |
-| <a name="input_os_disk"></a> [os\_disk](#input\_os\_disk) | Objects to configure os disk reference for virtual machine | <pre>object({<br>    caching              = string<br>    storage_account_type = string<br>  })</pre> | <pre>{<br>  "caching": "ReadWrite",<br>  "storage_account_type": "Standard_LRS"<br>}</pre> | no |
+| <a name="input_os_disk"></a> [os\_disk](#input\_os\_disk) | Objects to configure os disk reference for virtual machine | <pre>object({<br/>    caching              = string<br/>    storage_account_type = string<br/>  })</pre> | <pre>{<br/>  "caching": "ReadWrite",<br/>  "storage_account_type": "Standard_LRS"<br/>}</pre> | no |
 | <a name="input_project"></a> [project](#input\_project) | Project name | `string` | n/a | yes |
 | <a name="input_public_ip_allocation_method"></a> [public\_ip\_allocation\_method](#input\_public\_ip\_allocation\_method) | Defines the allocation method for this IP address. Possible values are Static or Dynamic | `string` | `"Static"` | no |
 | <a name="input_public_ip_enabled"></a> [public\_ip\_enabled](#input\_public\_ip\_enabled) | Boolean flag to enable Public Ip address creation and assignment to Virtual Machine | `bool` | `false` | no |
 | <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | The name of the resource group | `string` | n/a | yes |
-| <a name="input_source_image_reference"></a> [source\_image\_reference](#input\_source\_image\_reference) | Objects to configure source image reference for virtual machine | <pre>object({<br>    publisher = string<br>    offer     = string<br>    sku       = string<br>    version   = string<br>  })</pre> | <pre>{<br>  "offer": "WindowsServer",<br>  "publisher": "MicrosoftWindowsServer",<br>  "sku": "2022-datacenter-azure-edition",<br>  "version": "latest"<br>}</pre> | no |
+| <a name="input_source_image_reference"></a> [source\_image\_reference](#input\_source\_image\_reference) | Objects to configure source image reference for virtual machine | <pre>object({<br/>    publisher = string<br/>    offer     = string<br/>    sku       = string<br/>    version   = string<br/>  })</pre> | <pre>{<br/>  "offer": "WindowsServer",<br/>  "publisher": "MicrosoftWindowsServer",<br/>  "sku": "2022-datacenter-azure-edition",<br/>  "version": "latest"<br/>}</pre> | no |
 | <a name="input_subnet_id"></a> [subnet\_id](#input\_subnet\_id) | The ID of the Subnet where this Network Interface should be located in. | `string` | n/a | yes |
 | <a name="input_suffix"></a> [suffix](#input\_suffix) | Optional suffix that would be added to the end of resources names. It is recommended to use dash at the beginning of variable (e.x., '-example') | `string` | `""` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Resource tags | `map(any)` | `{}` | no |
